@@ -1,0 +1,508 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    padding: 0;
+}
+
+h1, h2, h3, h4, p, img, a {
+    text-decoration: none;
+    margin: 0;
+    background: none;
+}
+
+.wrapper {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.top {
+    background-image: url(../images/top-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.top-bar {
+    width: 100%;
+    padding: 2% 0 1% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.platform {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.platform img {
+    width: 100%;
+}
+
+.platform a {
+    width: 55px;
+    display: block;
+    opacity: 0.5;
+    transition: 0.8s;
+    margin-left: 20px;
+}
+
+.platform a:hover, .platform a:active {
+    opacity: 1;
+}
+
+.top-content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 70px;
+}
+
+.desc {
+    width: 50%;
+    padding-top: 70px;
+    color: white;
+}
+
+.desc h1 {
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+
+.desc p:first-child {
+    font-weight: 400;
+    color: rgb(232,210,123);
+    margin-bottom: 10px;
+}
+
+.prize {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.prize p {
+    margin-left: 17px;
+    line-height: 1.5em;
+}
+
+b {
+    font-weight: 400;
+    color: rgb(232,210,123); 
+}
+
+.cta {
+    font-weight: 600;
+    color: rgb(32,28,85);
+    background-color: rgb(192,255,54);
+    padding: 15px 40px;
+    margin-top: 10%;
+    display: inline-block;
+    transition: 0.8s;
+    text-align: center;
+}
+
+.cta:hover, .cta:active {
+    color: rgb(192,255,54);
+    background-color: rgb(19,19,55);
+}
+
+.player {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#ronaldo {
+    width: 320px;
+    height: auto;
+}
+
+.testimonials-mobile {
+    display: none;
+}
+
+.testimonials img {
+    width: 25px;
+}
+
+.testimonials p:nth-child(2) {
+    font-family: Georgia,Times,Times New Roman,serif; 
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.3em;
+    letter-spacing: 0.01em;
+    color: white;
+    padding: 10px 0 0 30px;
+}
+
+.testimonials p:nth-child(3) {
+    font-size: 12px;
+    color: white;
+    text-align: right;
+    margin-top: 15px;
+}
+
+.bottom {
+    height: 40%;
+}
+
+.bottom .wrapper:first-child {
+    padding-top: 30px;
+} 
+
+.bottom h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.getting-started {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 0 10% 0;
+    overflow: auto;
+}
+
+.step {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+    text-align: left;
+}
+
+.step p {
+    font-weight: 500;
+    margin-left: 17px;
+}
+
+.soc-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 5px 0;
+    border-top: 1px solid rgb(210,210,210);
+}
+
+.soc-links img {
+    width: 70%
+}
+
+.soc-links a {
+    margin-left: 20px;
+    opacity: 0.8;
+    transition: 0.8s;
+    text-align: center;
+}
+
+.soc-links a:first-child {
+    margin-left: 0;
+}
+
+.soc-links a:hover, .soc-links a:active {
+    opacity: 0.5;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 15px 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(32,28,85);
+}
+
+.footer a {
+    color: rgb(32,28,85);
+    transition: 0.5s;
+}
+
+.footer a:hover, .footer a:active {
+    color: rgb(140,140,200);
+}
+
+/*mobile*/
+
+@media screen and (min-width: 951px) and (max-width: 1200px) {
+    .getting-started {
+        display: block;
+    }
+    .step {
+        width: 47%;
+        float: left;
+        justify-content: flex-start;
+        margin-bottom: 25px
+    }
+}
+@media screen and (min-width: 801px) and (max-width: 950px) {
+    .top {
+        height: 500px;
+    }
+    .desc h1 {
+        font-size: 24px;
+    }
+    .desc {
+        width: 52%;
+        padding-top: 30px;
+    }
+    .desc p {
+        font-size: 15px;
+    }
+    .player {
+        justify-content: flex-end;
+        padding-top: 10px;
+    }
+    .testimonials {
+        display: none;
+    }
+    .testimonials-mobile {
+        display: inherit;
+        padding-bottom: 25px;
+    }
+    .testimonials-mobile p:nth-child(2) {
+        display: inherit;
+        font-family: Georgia,Times,Times New Roman,serif; 
+        font-style: italic;
+        font-size: 16px;
+        line-height: 1.3em;
+        letter-spacing: 0.01em;
+        color: rgb(170,170,170);
+        margin-top: 5px;
+    }
+    .testimonials-mobile p:nth-child(3) {
+        font-size: 12px;
+        color: rgb(170,170,170);
+        text-align: right;
+        margin-top: 15px;
+    }
+    #ronaldo {
+        width: 90%;
+    }
+    .bottom h2 {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .getting-started {
+        display: block;
+    }
+    .step {
+        width: 45%;
+        float: left;
+        justify-content: flex-start;
+        margin-bottom: 25px;
+        margin-left: 15px;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 890px) {
+    .top {
+        height: 500px;
+    }
+    .desc {
+        padding-top: 30px;
+    }
+    .player {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (min-width: 551px) and (max-width: 800px) {
+    .wrapper {
+        width: 80%;
+    }
+    .top-bar {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    .top {
+        height: 100%;
+    }
+    .platform {
+        margin-top: 30px;
+    }
+    .top-content {
+        flex-direction: column;
+    }
+    .desc {
+        width: 100%;
+        padding-top: 60px;
+        font-size: 14px;
+        text-align: center
+    }
+    .desc p:first-child {
+        text-align: center;
+    }
+    .desc h1 {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .prize {
+        width: 45%;
+        float: left;
+        text-align: left
+    }
+    .prize:nth-child(4) {
+        margin-left: 32px;
+    }
+    .cta {
+        margin-top: 50px;
+        font-size: 16px;
+    }
+    .player {
+        width: 100%;
+    }
+    #ronaldo {
+        width: 90%;
+        display: none;
+    }
+    .testimonials {
+        display: none;
+    }
+    .testimonials-mobile {
+        display: inherit;
+        padding-bottom: 25px;
+    }
+    .testimonials-mobile p:nth-child(2) {
+        display: inherit;
+        font-family: Georgia,Times,Times New Roman,serif; 
+        font-style: italic;
+        font-size: 16px;
+        line-height: 1.3em;
+        letter-spacing: 0.01em;
+        color: rgb(170,170,170);
+        margin-top: 5px;
+    }
+    .testimonials-mobile p:nth-child(3) {
+        font-size: 12px;
+        color: rgb(170,170,170);
+        text-align: right;
+        margin-top: 15px;
+    }
+    .bottom h2 {
+        text-align: center;
+    }
+    .getting-started {
+        display: block;
+        text-align: center;
+        width: 45%;
+        margin: 0 auto;
+    }
+    .step {
+        width: 100%;
+        float: left;
+        justify-content: flex-start;
+        margin: 0 0 25px 0;
+    }
+}
+@media screen and (max-width: 550px) {
+    .wrapper {
+        width: 80%;
+    }
+    .top-bar {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    .top {
+        height: 100%;
+    }
+    .platform {
+        margin-top: 30px;
+    }
+    .top-content {
+        flex-direction: column;
+    }
+    .desc {
+        width: 100%;
+        padding-top: 55px;
+        font-size: 14px;
+        text-align: center
+    }
+    .desc p:first-child {
+        text-align: center;
+    }
+    .desc h1 {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    .prize {
+        width: 100%;
+        text-align: left
+    }
+   
+    .cta {
+        margin-top: 50px;
+        font-size: 16px;
+    }
+    .player {
+        width: 100%;
+    }
+    #ronaldo {
+        width: 90%;
+        display: none;
+    }
+    .testimonials {
+        display: none;
+    }
+    .testimonials-mobile {
+        display: inherit;
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgb(210,210,210);
+    }
+    .testimonials-mobile p:nth-child(2) {
+        display: inherit;
+        font-family: Georgia,Times,Times New Roman,serif; 
+        font-style: italic;
+        font-size: 16px;
+        line-height: 1.3em;
+        letter-spacing: 0.01em;
+        color: rgb(170,170,170);
+        margin-top: 5px;
+    }
+    .testimonials-mobile p:nth-child(3) {
+        font-size: 12px;
+        color: rgb(170,170,170);
+        text-align: right;
+        margin-top: 15px;
+    }
+    .bottom h2 {
+        text-align: center;
+        margin: 30px 0 30px 0;
+        
+    }
+    .getting-started {
+        display: block;
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .step {
+        width: 100%;
+        margin: 0 0 25px 0;
+        justify-content: flex-start;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+/*
+@media and (max-width: 551px) {
+    .desc {display:block;}
+    .prize {
+        display: block;
+        width: 30%;
+    }
+}
+*/
+
+
